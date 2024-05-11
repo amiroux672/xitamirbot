@@ -1,5 +1,5 @@
 const config = {
-    name: "run",
+    name: "تشغيل",
     aliases: ["eval", "execute", "exec"],
     permissions: [2],
     description: "Run bot scripts",
@@ -10,7 +10,7 @@ const config = {
 
 function onCall({ message, args }) {
     eval(args.join(" "));
-    message.send("Done!");
+    message.send("تم تشغيل!");
 }
 
 export default {
